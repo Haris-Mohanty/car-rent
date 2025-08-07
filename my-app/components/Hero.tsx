@@ -32,7 +32,7 @@ const Hero = () => {
       </div>
 
       {/* Search Form - Half overlapping the image */}
-      <div className="relative z-20 container mx-auto px-4 -mt-32">
+      <div className="relative z-20 container mx-auto px-4 -mt-32 mb-8">
         <SearchForm />
       </div>
 
