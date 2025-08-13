@@ -1,9 +1,16 @@
-"use client"
+"use client";
 
-import { Car, MapPin, Timer, Phone } from "lucide-react"
-import { motion } from "framer-motion"
+import { Car, MapPin, Timer, Phone } from "lucide-react";
+import { motion } from "framer-motion";
+import React from "react";
 
-const steps = [
+interface Step {
+  icon: JSX.Element;
+  title: string;
+  description: string;
+}
+
+const steps: Step[] = [
   {
     icon: <MapPin className="text-black-500 w-8 h-8" />,
     title: "Choose Location",
@@ -17,19 +24,22 @@ const steps = [
   {
     icon: <Phone className="text-black-500 w-8 h-8" />,
     title: "Book a Car",
-    description: "Reserve the vehicle you want instantly from the comfort of home.",
+    description:
+      "Reserve the vehicle you want instantly from the comfort of home.",
   },
   {
     icon: <Car className="text-black-500 w-8 h-8" />,
     title: "Ride & Enjoy",
-    description: "Hop in and enjoy your journey with comfort and safety.",
+    description:
+      "Hop in and enjoy your journey with comfort and safety.",
   },
-]
+];
 
 export function WorkingSteps() {
   return (
     <section className="py-12 md:py-20 bg-white dark:bg-gray-950">
       <div className="max-w-6xl mx-auto px-4">
+        {/* Section Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
             How Our Service Works
@@ -39,6 +49,7 @@ export function WorkingSteps() {
           </p>
         </div>
 
+        {/* Steps Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {steps.map((step, index) => (
             <motion.div
@@ -65,5 +76,5 @@ export function WorkingSteps() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import PopularCarDeals from '@/components/PopularCarDeals';
 import WhyChooseUs from '@/components/WhyChooseUs';
+import Testimonials from '@/components/Testimonials';
+import DriveWithUs from '@/components/DriveWithUs';
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <WorkingSteps />
         <PopularCarDeals />
         <WhyChooseUs />
+        <Testimonials />
+        <DriveWithUs />
       </main>
     </>
   );
