@@ -5,6 +5,7 @@ import PopularCarDeals from '@/components/PopularCarDeals';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Testimonials from '@/components/Testimonials';
 import DriveWithUs from '@/components/DriveWithUs';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <WhyChooseUs />
         <Testimonials />
         <DriveWithUs />
+        <Footer />
       </main>
     </>
   );
