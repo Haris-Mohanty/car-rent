@@ -154,7 +154,7 @@ const SearchForm = () => {
         <div className="flex items-end">
           <Button
             size="lg"
-            className="w-full py-4 bg-primary hover:bg-primary/90 text-white font-semibold rounded-lg text-base shadow-md"
+            className="w-full py-4 bg-primary hover:bg-primary/90 text-white font-semibold rounded-lg text-base shadow-md cursor-pointer"
           >
             Search Car
           </Button>
